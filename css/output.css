@@ -33,21 +33,21 @@ header {
       display: inline-block; }
 
 .shelf {
-  background-color: burlywood;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-color: burlywood; }
   .shelf .album {
     background-color: #E24E42;
     float: left;
     margin-right: 2%;
     margin-bottom: 2%;
-    width: 23.5%; }
+    width: 18.4%; }
+    .shelf .album:nth-child(5n) {
+      background-color: palevioletred;
+      margin-right: 0; }
 
 footer {
   background-color: #008F95; }
 
-html {
+html * {
   box-sizing: border-box; }
 
 *:not(body):not(html) {

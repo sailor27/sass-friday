@@ -3,9 +3,9 @@
 
 .shelf {
   background-color: burlywood;
-  @include flexy;
+  // @include flexy;
   .album {
     background-color: $album;
-    @include fit-on-shelf(4,2%);
+    @include fit-on-shelf(5,2%);
   }
 }

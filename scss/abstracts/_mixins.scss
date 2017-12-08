@@ -30,4 +30,8 @@
   margin-right: $margin;
   margin-bottom:$margin;
   width: ((100% - (($albums - 1) * $margin)) / $albums);
+  &:nth-child(#{$albums}n){
+    background-color:palevioletred;
+    margin-right:0;
+  }
 }
