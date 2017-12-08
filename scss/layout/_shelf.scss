@@ -1,4 +1,11 @@
+.shelf{
+}
 
-.album {
-  background-color: $album;
+.shelf {
+  background-color: burlywood;
+  @include flexy;
+  .album {
+    background-color: $album;
+    @include fit-on-shelf(4,2%);
+  }
 }

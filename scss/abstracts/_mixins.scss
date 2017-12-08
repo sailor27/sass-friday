@@ -4,7 +4,6 @@
   margin:0;
   width: (100% / 3);
 }
-
 // makes items in a list inline and unstyled
 @mixin listy{
   & li {
@@ -13,7 +12,6 @@
   }
 }
 //turn into flex container and center items vertically and horizontally inside
-
 @mixin flexy{
   display: flex;
   justify-content: center;
@@ -25,4 +23,11 @@
         left: auto;
         right: auto;
     }
+}
+//define number of albums on shelf and space between them
+@mixin fit-on-shelf($albums, $margin){
+  float:left;
+  margin-right: $margin;
+  margin-bottom:$margin;
+  width: ((100% - (($albums - 1) * $margin)) / $albums);
 }
