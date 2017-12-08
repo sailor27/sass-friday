@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box; }
 
+*:not(body):not(html) {
+  border: 1px dashed #ccc; }
+
+div {
+  min-height: 50px; }
 
 /*# sourceMappingURL=output.css.map */

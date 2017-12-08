@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+// for wireframing:
+*:not(body):not(html){
+  border: 1px dashed #ccc;
+}
+div {
+  min-height: 50px;
+}
