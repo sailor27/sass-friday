@@ -1,19 +1,36 @@
 header {
   background-color: #008F95; }
+  header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   header nav ul {
     background-color: #FFDB58;
     margin: 0; }
 
+.logo-header {
+  display: flex; }
+  .logo-header li {
+    list-style: none;
+    display: inline-block; }
+
 .sib {
   margin: 0;
   width: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 12vh; }
-
-.logo-header {
-  display: flex; }
 
 .navbar {
   width: 100vw; }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navbar ul li {
+      list-style: none;
+      display: inline-block; }
 
 .album {
   background-color: #E24E42; }
@@ -32,9 +49,6 @@ div {
 
 body {
   margin: 0; }
-
-li {
-  list-style: none; }
 
 .container {
   width: 100%;

@@ -1,4 +1,7 @@
 header {
+  h1{
+    @include flexy;
+  }
   background-color: $header;
   nav{
     ul {
@@ -8,13 +11,19 @@ header {
     }
 }
 
-.sib{
-  @include share3;
-  height: 12vh;
-}
 .logo-header{
   display: flex;
+  @include listy;
+}
+.sib{
+  @include share3;
+  @include flexy;
+  height: 12vh;
 }
 .navbar{
   width: 100vw;
+    ul{
+      @include listy;
+      @include flexy;
+    }
 }

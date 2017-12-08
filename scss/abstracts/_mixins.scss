@@ -4,3 +4,25 @@
   margin:0;
   width: (100% / 3);
 }
+
+// makes items in a list inline and unstyled
+@mixin listy{
+  & li {
+    list-style:none;
+    display: inline-block;
+  }
+}
+//turn into flex container and center items vertically and horizontally inside
+
+@mixin flexy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//align items center
+@mixin push--auto {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
