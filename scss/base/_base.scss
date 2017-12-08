@@ -12,8 +12,20 @@ div {
 body{
   margin:0;
 }
-
+li{
+  list-style: none;
+}
+// makes container full width, white background
 .container {
   width: 100%;
   background-color: $container;
+}
+//clearfix (@extend this when a parent collapses)
+.clearfix {
+  &:after {
+    content:"";
+    clear:both;
+    // color tester:
+    background-color: lightblue;
+  }
 }

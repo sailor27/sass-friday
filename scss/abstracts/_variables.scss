@@ -2,9 +2,15 @@
 
 // papaya
 $album: #E24E42;
-//AQUA
+//AQUA header and footer
 $header: #008F95;
-//blush
-$container: #de5d83;
+$footer: $header;
+//blush #de5d83
+$container: #eee;
 //mustard
 $navbar: #FFDB58;
+
+//💻breakpoints🖥
+$charmander: "only screen and (max-width: 767px)";
+$charmeleon: "only screen and (min-width: 768px)";
+$charizard: "only screen and (min-width: 991px)";

@@ -1,8 +1,20 @@
 header {
   background-color: $header;
   nav{
-      ul {
+    ul {
       background-color: $navbar;
+      margin:0;
       }
     }
+}
+
+.sib{
+  @include share3;
+  height: 12vh;
+}
+.logo-header{
+  display: flex;
+}
+.navbar{
+  width: 100vw;
 }

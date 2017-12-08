@@ -1,0 +1,6 @@
+
+//share 3 ways - split the screen width 3 ways between sibling elements with "sib" class
+@mixin share3{
+  margin:0;
+  width: (100% / 3);
+}

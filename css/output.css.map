@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,MAAO;EACL,gBAAgB,ECIT,OAAO;EDFV,aAAG;IACH,gBAAgB,ECKb,OAAO;;ACPhB,MAAO;EACL,gBAAgB,EDAV,OAAO;;AEHf,IAAK;EACH,UAAU,EAAE,UAAU;;AAIxB,qBAAqB;EACnB,MAAM,EAAE,eAAe;;AAEzB,GAAI;EACF,UAAU,EAAE,IAAI;;AAElB,IAAI;EACF,MAAM,EAAC,CAAC;;AAGV,UAAW;EACT,KAAK,EAAE,IAAI;EACX,gBAAgB,EFVN,OAAO",
-"sources": ["../scss/layout/_header.scss","../scss/abstracts/_variables.scss","../scss/layout/_shelf.scss","../scss/base/_base.scss"],
+"mappings": "AAAA,MAAO;EACL,gBAAgB,ECKT,OAAO;EDHZ,aAAG;IACD,gBAAgB,ECMb,OAAO;IDLV,MAAM,EAAC,CAAC;;AAKd,IAAI;EEPF,MAAM,EAAC,CAAC;EACR,KAAK,EAAE,cAAU;EFQjB,MAAM,EAAE,IAAI;;AAEd,YAAY;EACV,OAAO,EAAE,IAAI;;AAEf,OAAO;EACL,KAAK,EAAE,KAAK;;AGjBd,MAAO;EACL,gBAAgB,EFCV,OAAO;;AGHf,MAAO;EACL,gBAAgB,EHKT,OAAO;;AINhB,IAAK;EACH,UAAU,EAAE,UAAU;;AAIxB,qBAAqB;EACnB,MAAM,EAAE,eAAe;;AAEzB,GAAI;EACF,UAAU,EAAE,IAAI;;AAElB,IAAI;EACF,MAAM,EAAC,CAAC;;AAEV,EAAE;EACA,UAAU,EAAE,IAAI;;AAGlB,UAAW;EACT,KAAK,EAAE,IAAI;EACX,gBAAgB,EJZN,IAAI;;AIgBd,eAAQ;EACN,OAAO,EAAC,EAAE;EACV,KAAK,EAAC,IAAI;EAEV,gBAAgB,EAAE,SAAS",
+"sources": ["../scss/layout/_header.scss","../scss/abstracts/_variables.scss","../scss/abstracts/_mixins.scss","../scss/layout/_shelf.scss","../scss/layout/_footer.scss","../scss/base/_base.scss"],
 "names": [],
 "file": "output.css"
 }
