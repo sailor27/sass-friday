@@ -9,3 +9,11 @@ html {
 div {
   min-height: 50px;
 }
+body{
+  margin:0;
+}
+
+.container {
+  width: 100%;
+  background-color: $container;
+}

@@ -1,3 +1,11 @@
+header {
+  background-color: #008F95; }
+  header nav ul {
+    background-color: #FFDB58; }
+
+.album {
+  background-color: #E24E42; }
+
 html {
   box-sizing: border-box; }
 
@@ -6,5 +14,12 @@ html {
 
 div {
   min-height: 50px; }
+
+body {
+  margin: 0; }
+
+.container {
+  width: 100%;
+  background-color: #de5d83; }
 
 /*# sourceMappingURL=output.css.map */
