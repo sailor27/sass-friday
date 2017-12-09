@@ -3,7 +3,8 @@ header {
   header h1 {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-align: center; }
   header nav ul {
     background-color: #FFDB58;
     margin: 0; }
@@ -26,23 +27,30 @@ header {
   align-items: center; }
 
 .navbar {
-  width: 100vw; }
+  width: 100vw;
+  z-index: 1; }
   .navbar ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4vh; }
+    height: 10vh; }
     .navbar ul li {
       list-style: none;
       display: inline-block; }
 
+@media only screen and (min-width: 599px) {
+  .navbar ul {
+    height: 4vh; } }
 .shelf {
   background-color: #ccc;
-  padding: 1.5vh 8vw;
-  overflow-x: scroll;
-  max-height: 22vh; }
+  padding: 1.5vh 8vw; }
+  .shelf > div:not(:first-child) {
+    display: none; }
 
 .album {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url("../img/album1.jpg");
   float: left;
   margin-right: 10%;
   margin-bottom: 10%;
@@ -50,19 +58,18 @@ header {
   position: relative;
   background-repeat: no-repeat;
   background-size: contain; }
-  .album:nth-child(1n) {
-    background-color: palevioletred; }
   .album:before {
     content: "";
     display: block;
     padding-top: 100%; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 599px) {
   .shelf {
-    background-color: #ccc;
-    padding: 1.5vh 8vw;
+    visibility: visible;
     overflow-x: scroll;
     max-height: 22vh; }
+    .shelf > div:not(:first-child) {
+      display: block; }
 
   .album {
     background-repeat: no-repeat;
@@ -78,8 +85,6 @@ header {
       display: block;
       padding-top: 100%; }
     .album:nth-child(4n) {
-      background-color: palevioletred; }
-    .album:nth-child(4n) {
       margin-right: 0; } }
 @media only screen and (min-width: 991px) {
   .shelf {
@@ -91,8 +96,6 @@ header {
     margin-right: 2%;
     margin-bottom: 2%;
     width: 18.4%; }
-    .album:nth-child(5n) {
-      background-color: palevioletred; }
     .album:nth-child(4n) {
       margin-right: 2%; }
     .album:nth-child(5n) {
@@ -115,8 +118,6 @@ header {
   margin-bottom: 2%;
   width: 18.4%;
   margin-bottom: 0; }
-  .card:nth-child(5n) {
-    background-color: palevioletred; }
 
 @media only screen and (min-width: 991px) {
   height: 22vh; }
@@ -140,8 +141,7 @@ body {
   background-color: #008F95; }
 
 .container {
-  width: 100%;
-  background-color: pink; }
+  width: 100%; }
 
 .clearfix:after {
   content: "";

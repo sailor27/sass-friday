@@ -1,6 +1,7 @@
 header {
   h1{
     @include flexy;
+    text-align: center;
   }
   background-color: $header;
     nav{
@@ -10,7 +11,7 @@ header {
         }
         li{
           padding: 0 5%;
-        }
+          }
       }
 }
 .logo-header{
@@ -21,13 +22,21 @@ header {
 .sib{
   @include share3;
   @include flexy;
-
 }
 .navbar{
   width: 100vw;
+  z-index: 1;
+  ul{
+    @include listy;
+    @include flexy;
+    height: 10vh;
+  }
+}
+
+@media #{$charmeleon}{
+  .navbar{
     ul{
-      @include listy;
-      @include flexy;
       height: 4vh;
     }
+  }
 }

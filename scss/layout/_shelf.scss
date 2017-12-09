@@ -1,21 +1,28 @@
 // Styles for Album Shelves
 
+
+// mobile view styling: removes all but first album on each shelf.
 .shelf{
   background-color: $container;
   padding: 1.5vh 8vw;
-  overflow-x: scroll;
-  max-height: 22vh;
+  & > div:not(:first-child){
+    display: none;
+  }
 }
 .album{
+  @include background;
+  background: url("../img/album1.jpg");
   @include fit-on-shelf(1,10%);
   @include square;
   @include background;
 }
-
+// fit the albums on the shelves for tablet screen sizes. removes margin from last item in 4 album row.
 @media #{$charmeleon}{
   .shelf {
-    background-color: $container;
-    padding: 1.5vh 8vw;
+    & > div:not(:first-child){
+      display: block;
+    }
+    visibility: visible;
     overflow-x: scroll;
     max-height: 22vh;
   }
@@ -29,6 +36,7 @@
       }
   }
 }
+// fit the albums on the shelves for desktop screen sizes. adds margin on 4th album in row. removes margin from last item in 5 album row.
 @media #{$charizard}{
   .shelf {
     max-height: 25vh;
@@ -44,19 +52,3 @@
     }
   }
 }
-// fit the albums on the shelves at different screen sizes
-// $charmander: "only screen and (max-width: 767px)";
-// $charmeleon: "only screen and (min-width: 768px)";
-// $charizard: "only screen and (min-width: 991px)";
-  // @media #{charmander}{
-  //   @include fit-on-shelf(1,10%);
-  //   }
-  // @media #{$charmeleon}{
-  //   background-color: yellow;
-  //   @include fit-on-shelf(4,2%);
-  // }
-//   @media #{$charizard}{
-//     background-color: blue;
-//     @include fit-on-shelf(5,2%);
-//     }
-// }
