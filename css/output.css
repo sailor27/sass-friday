@@ -9,7 +9,8 @@ header {
     margin: 0; }
 
 .logo-header {
-  display: flex; }
+  display: flex;
+  height: 9.5vh; }
   .logo-header li {
     list-style: none;
     display: inline-block; }
@@ -17,56 +18,70 @@ header {
 .sib {
   margin: 0;
   width: 33.3333333333%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 12vh; }
+  align-items: center; }
 
 .navbar {
   width: 100vw; }
   .navbar ul {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: 4vh; }
     .navbar ul li {
       list-style: none;
       display: inline-block; }
 
 .shelf {
-  background-color: burlywood;
-  padding: 1.5vh 1.5vw; }
-  .shelf .test-wrap {
-    height: 30vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform: rotate(-90deg);
-    transform-origin: right top; }
-    .shelf .test-wrap .album {
-      background-color: #E24E42;
-      min-height: 300px;
-      float: left;
-      margin-right: 2%;
-      margin-bottom: 2%;
-      width: 18.4%; }
-      .shelf .test-wrap .album:nth-child(5n) {
-        background-color: palevioletred;
-        margin-right: 0; }
+  background-color: #eee;
+  padding: 1.5vh 8vw;
+  height: 25vh;
+  overflow-x: scroll; }
+  .shelf .album {
+    background-color: #E24E42;
+    min-height: 250px;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 23.5%; }
+    .shelf .album:nth-child(4n) {
+      background-color: palevioletred;
+      margin-right: 0; }
 
 .news {
   background-color: blue;
-  clear: both; }
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  overflow: hidden; }
+
+.card {
+  background-color: #fff;
+  height: 80%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 18.4%; }
+  .card:nth-child(5n) {
+    background-color: palevioletred;
+    margin-right: 0; }
 
 footer {
-  background-color: #008F95; }
+  height: 11.5vh;
+  background-color: #008F95;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 html * {
   box-sizing: border-box; }
 
 *:not(body):not(html) {
   border: 1px dashed #ccc; }
-
-div {
-  min-height: 50px; }
 
 body {
   margin: 0; }
@@ -75,7 +90,7 @@ body {
   width: 100%;
   background-color: pink; }
 
-.clearfix:after, footer:after {
+.clearfix:after {
   content: "";
   clear: both;
   background-color: lightblue; }

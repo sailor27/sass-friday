@@ -3,6 +3,7 @@
 @mixin share3{
   margin:0;
   width: (100% / 3);
+  height: 100%;
 }
 // makes items in a list inline and unstyled
 @mixin listy{

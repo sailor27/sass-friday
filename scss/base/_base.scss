@@ -6,9 +6,7 @@ html *{
 *:not(body):not(html){
   border: 1px dashed #ccc;
 }
-div {
-  min-height: 50px;
-}
+
 body{
   margin:0;
 }

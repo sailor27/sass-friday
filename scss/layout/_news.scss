@@ -1,4 +1,13 @@
 .news{
   background-color: blue;
   clear: both;
+  @include flexy;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #fff;
+  height: 80%;
+  @include fit-on-shelf(5,2%);
 }

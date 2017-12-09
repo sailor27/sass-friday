@@ -1,4 +1,7 @@
 footer {
+  height: 11.5vh;
   background-color: $footer;
-  @extend .clearfix;
+  @include flexy;
+  & ul{
+  }
 }

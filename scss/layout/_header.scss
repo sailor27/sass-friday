@@ -1,4 +1,5 @@
 header {
+
   h1{
     @include flexy;
   }
@@ -14,16 +15,17 @@ header {
 .logo-header{
   display: flex;
   @include listy;
+  height: 9.5vh;
 }
 .sib{
   @include share3;
   @include flexy;
-  height: 12vh;
 }
 .navbar{
   width: 100vw;
     ul{
       @include listy;
       @include flexy;
+      height: 4vh;
     }
 }
