@@ -1,11 +1,17 @@
-.shelf{
-}
-
+// Styles for Album Shelves
 .shelf {
   background-color: burlywood;
-  // @include flexy;
-  .album {
-    background-color: $album;
-    @include fit-on-shelf(5,2%);
+  padding: 1.5vh 1.5vw;
+  .test-wrap{
+    height: 30vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    .album {
+      background-color: $album;
+      min-height: 300px;
+      @include fit-on-shelf(5,2%);
+    }
   }
 }
