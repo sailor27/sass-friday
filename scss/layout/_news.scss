@@ -1,13 +1,16 @@
 .news{
-  background-color: blue;
+  background-color: white;
   clear: both;
   @include flexy;
+
   height: 25vh;
   overflow: hidden;
+  padding: 1% 2%;
 }
 
 .card {
-  background-color: #fff;
-  height: 80%;
+  background-color: $navbar;
+  height: 78%;
   @include fit-on-shelf(5,2%);
+  margin-bottom: 0;
 }

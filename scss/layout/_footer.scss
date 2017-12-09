@@ -2,6 +2,7 @@ footer {
   height: 11.5vh;
   background-color: $footer;
   @include flexy;
-  & ul{
+  & > * {
+    margin: 5%;
   }
 }

@@ -7,6 +7,8 @@ header {
   header nav ul {
     background-color: #FFDB58;
     margin: 0; }
+  header nav li {
+    padding: 0 5%; }
 
 .logo-header {
   display: flex;
@@ -35,7 +37,7 @@ header {
       display: inline-block; }
 
 .shelf {
-  background-color: #eee;
+  background-color: #ccc;
   padding: 1.5vh 8vw;
   height: 25vh;
   overflow-x: scroll; }
@@ -51,21 +53,23 @@ header {
       margin-right: 0; }
 
 .news {
-  background-color: blue;
+  background-color: white;
   clear: both;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 25vh;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1% 2%; }
 
 .card {
-  background-color: #fff;
-  height: 80%;
+  background-color: #FFDB58;
+  height: 78%;
   float: left;
   margin-right: 2%;
   margin-bottom: 2%;
-  width: 18.4%; }
+  width: 18.4%;
+  margin-bottom: 0; }
   .card:nth-child(5n) {
     background-color: palevioletred;
     margin-right: 0; }
@@ -76,6 +80,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
+  footer > * {
+    margin: 5%; }
 
 html * {
   box-sizing: border-box; }
