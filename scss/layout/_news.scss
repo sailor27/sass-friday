@@ -1,17 +1,27 @@
 .news{
   background-color: white;
   clear: both;
-  @include flexy;
   height: 28vh;
-  overflow: hidden;
-  padding: 1% 2%;
+  overflow-y:hidden;
 }
 
 .card {
-  background-color: $navbar;
-  height: 78%;
-  @include fit-on-shelf(5,2%);
-  margin-bottom: 0;
+  background-color: $album;
+  @include share3;
+  float:left;
+}
+
+@media#{$charmeleon}{
+  .news{
+    padding: 1% 2%;
+    height: 28vh;
+    @include flexy;
+  }
+  .card{
+    background-color: $navbar;
+    @include fit-on-shelf(5,2%);
+    height:78%
+  }
 }
 
 @media #{$charizard}{

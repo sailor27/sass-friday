@@ -103,22 +103,31 @@ header {
 .news {
   background-color: white;
   clear: both;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 28vh;
-  overflow: hidden;
-  padding: 1% 2%; }
+  overflow-y: hidden; }
 
 .card {
-  background-color: #FFDB58;
-  height: 78%;
-  float: left;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  width: 18.4%;
-  margin-bottom: 0; }
+  background-color: #E24E42;
+  margin: 0;
+  width: 33.3333333333%;
+  height: 100%;
+  float: left; }
 
+@media only screen and (min-width: 599px) {
+  .news {
+    padding: 1% 2%;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .card {
+    background-color: #FFDB58;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 18.4%;
+    height: 78%; } }
 @media only screen and (min-width: 991px) {
   height: 22vh; }
 footer {
