@@ -4,13 +4,11 @@
   height: 28vh;
   overflow-y:hidden;
 }
-
 .card {
   background-color: $album;
   @include share3;
   float:left;
 }
-
 @media#{$charmeleon}{
   .news{
     padding: 1% 2%;
@@ -19,11 +17,10 @@
   }
   .card{
     background-color: $navbar;
-    @include fit-on-shelf(5,2%);
+    @include fit-on-shelf(3,2%);
     height:78%
   }
 }
-
 @media #{$charizard}{
   height: 22vh;
 }
