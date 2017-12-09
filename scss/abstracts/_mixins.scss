@@ -33,15 +33,19 @@
   width: ((100% - (($albums - 1) * $margin)) / $albums);
   &:nth-child(#{$albums}n){
     background-color:palevioletred;
-    margin-right:0;
+    // margin-right:0;
   }
 }
+// @mixin shelf-nudge{
+//   &:nth-child(4n){
+//     margin:2%;
+//   }
+// }
 //background image properties
 @mixin background{
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 //this psuedoelement sets the 100% padding top value based on the object's width. I am using it here to set the height of the album divs equal to their width.
 @mixin square{
   position: relative;

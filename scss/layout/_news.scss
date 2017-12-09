@@ -2,7 +2,7 @@
   background-color: white;
   clear: both;
   @include flexy;
-  height: 24vh;
+  height: 28vh;
   overflow: hidden;
   padding: 1% 2%;
 }
@@ -12,4 +12,8 @@
   height: 78%;
   @include fit-on-shelf(5,2%);
   margin-bottom: 0;
+}
+
+@media #{$charizard}{
+  height: 22vh;
 }

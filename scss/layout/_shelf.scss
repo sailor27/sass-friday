@@ -1,41 +1,47 @@
 // Styles for Album Shelves
-.shelf {
+
+.shelf{
   background-color: $container;
   padding: 1.5vh 8vw;
   overflow-x: scroll;
-  max-height: 25vh;
-  // @media #{charmander}{
-  //   // height: 30vh;
-  //   // background-color: blue;
-  // }
-  // @media #{charmeleon}{
-  //   // height:25vh;
-  // }
-  // @media #{$charizard}{
-  //   height: 25vh;
-  // }
+  max-height: 22vh;
 }
-.album {
-  @include background;
-  background: url("../img/album1.jpg");
+.album{
+  @include fit-on-shelf(1,10%);
   @include square;
-  @include fit-on-shelf(4,2%);
+  @include background;
 }
 
-// @media #{$charmeleon}{
-//   .album{
-//     @include square;
-//     background-color: yellow;
-//     @include fit-on-shelf(4,2%);
-//   }
-// }
-
-@media #{$charizard}{
+@media #{$charmeleon}{
+  .shelf {
+    background-color: $container;
+    padding: 1.5vh 8vw;
+    overflow-x: scroll;
+    max-height: 22vh;
+  }
   .album {
     @include background;
     background: url("../img/album1.jpg");
     @include square;
+    @include fit-on-shelf(4,2%);
+      &:nth-child(4n){
+        margin-right:0;
+      }
+  }
+}
+@media #{$charizard}{
+  .shelf {
+    max-height: 25vh;
+    background-color: green;
+  }
+  .album {
     @include fit-on-shelf(5,2%);
+    &:nth-child(4n){
+      margin-right:2%;
+    }
+    &:nth-child(5n){
+      margin-right:0;
+    }
   }
 }
 // fit the albums on the shelves at different screen sizes

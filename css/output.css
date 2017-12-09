@@ -40,26 +40,30 @@ header {
   background-color: #ccc;
   padding: 1.5vh 8vw;
   overflow-x: scroll;
-  max-height: 25vh; }
+  max-height: 22vh; }
 
 .album {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background: url("../img/album1.jpg");
-  position: relative;
   float: left;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  width: 23.5%; }
+  margin-right: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .album:nth-child(1n) {
+    background-color: palevioletred; }
   .album:before {
     content: "";
     display: block;
     padding-top: 100%; }
-  .album:nth-child(4n) {
-    background-color: palevioletred;
-    margin-right: 0; }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 768px) {
+  .shelf {
+    background-color: #ccc;
+    padding: 1.5vh 8vw;
+    overflow-x: scroll;
+    max-height: 22vh; }
+
   .album {
     background-repeat: no-repeat;
     background-size: contain;
@@ -68,13 +72,30 @@ header {
     float: left;
     margin-right: 2%;
     margin-bottom: 2%;
-    width: 18.4%; }
+    width: 23.5%; }
     .album:before {
       content: "";
       display: block;
       padding-top: 100%; }
+    .album:nth-child(4n) {
+      background-color: palevioletred; }
+    .album:nth-child(4n) {
+      margin-right: 0; } }
+@media only screen and (min-width: 991px) {
+  .shelf {
+    max-height: 25vh;
+    background-color: green; }
+
+  .album {
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 18.4%; }
     .album:nth-child(5n) {
-      background-color: palevioletred;
+      background-color: palevioletred; }
+    .album:nth-child(4n) {
+      margin-right: 2%; }
+    .album:nth-child(5n) {
       margin-right: 0; } }
 .news {
   background-color: white;
@@ -82,7 +103,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 24vh;
+  height: 28vh;
   overflow: hidden;
   padding: 1% 2%; }
 
@@ -95,9 +116,10 @@ header {
   width: 18.4%;
   margin-bottom: 0; }
   .card:nth-child(5n) {
-    background-color: palevioletred;
-    margin-right: 0; }
+    background-color: palevioletred; }
 
+@media only screen and (min-width: 991px) {
+  height: 22vh; }
 footer {
   height: 11.5vh;
   background-color: #008F95;
