@@ -39,26 +39,50 @@ header {
 .shelf {
   background-color: #ccc;
   padding: 1.5vh 8vw;
-  height: 25vh;
-  overflow-x: scroll; }
-  .shelf .album {
-    background-color: #E24E42;
-    min-height: 250px;
+  overflow-x: scroll;
+  max-height: 25vh; }
+
+.album {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url("../img/album1.jpg");
+  position: relative;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 23.5%; }
+  .album:before {
+    content: "";
+    display: block;
+    padding-top: 100%; }
+  .album:nth-child(4n) {
+    background-color: palevioletred;
+    margin-right: 0; }
+
+@media only screen and (min-width: 991px) {
+  .album {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background: url("../img/album1.jpg");
+    position: relative;
     float: left;
     margin-right: 2%;
     margin-bottom: 2%;
-    width: 23.5%; }
-    .shelf .album:nth-child(4n) {
+    width: 18.4%; }
+    .album:before {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+    .album:nth-child(5n) {
       background-color: palevioletred;
-      margin-right: 0; }
-
+      margin-right: 0; } }
 .news {
   background-color: white;
   clear: both;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 24vh;
   overflow: hidden;
   padding: 1% 2%; }
 
@@ -90,7 +114,8 @@ html * {
   border: 1px dashed #ccc; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #008F95; }
 
 .container {
   width: 100%;

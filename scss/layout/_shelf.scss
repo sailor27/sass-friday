@@ -2,12 +2,55 @@
 .shelf {
   background-color: $container;
   padding: 1.5vh 8vw;
-  height: 25vh;
   overflow-x: scroll;
+  max-height: 25vh;
+  // @media #{charmander}{
+  //   // height: 30vh;
+  //   // background-color: blue;
+  // }
+  // @media #{charmeleon}{
+  //   // height:25vh;
+  // }
+  // @media #{$charizard}{
+  //   height: 25vh;
+  // }
+}
+.album {
+  @include background;
+  background: url("../img/album1.jpg");
+  @include square;
+  @include fit-on-shelf(4,2%);
+}
 
+// @media #{$charmeleon}{
+//   .album{
+//     @include square;
+//     background-color: yellow;
+//     @include fit-on-shelf(4,2%);
+//   }
+// }
+
+@media #{$charizard}{
   .album {
-    background-color: $album;
-    min-height: 250px;
-    @include fit-on-shelf(4,2%);
+    @include background;
+    background: url("../img/album1.jpg");
+    @include square;
+    @include fit-on-shelf(5,2%);
   }
 }
+// fit the albums on the shelves at different screen sizes
+// $charmander: "only screen and (max-width: 767px)";
+// $charmeleon: "only screen and (min-width: 768px)";
+// $charizard: "only screen and (min-width: 991px)";
+  // @media #{charmander}{
+  //   @include fit-on-shelf(1,10%);
+  //   }
+  // @media #{$charmeleon}{
+  //   background-color: yellow;
+  //   @include fit-on-shelf(4,2%);
+  // }
+//   @media #{$charizard}{
+//     background-color: blue;
+//     @include fit-on-shelf(5,2%);
+//     }
+// }
