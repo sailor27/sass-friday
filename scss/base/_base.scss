@@ -2,11 +2,6 @@ html *{
   box-sizing: border-box;
 }
 
-// for wireframing:
-*:not(body):not(html){
-  border: 1px dashed #ccc;
-}
-
 body{
   margin:0;
   background-color: $footer;

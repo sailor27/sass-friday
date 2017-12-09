@@ -47,3 +47,10 @@
     padding-top: 100%;
   }
 }
+// change background image based on index
+
+@mixin pic{
+  @for $i from 1 through $albums {
+    background: url("../img/album#{$i}.jpg");
+  }
+}

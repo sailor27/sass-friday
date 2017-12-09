@@ -23,12 +23,7 @@ Process:
 * I think I'm still figuring out how to efficiently handle planning a larger project, to allow for enough experimentation that I can feel confident moving forward and make good decisions, but not jump right into the work and never look back. I think the code being modular and reusable should be able to lead my design, rather than antagonize it - but that's sort of how this project felt.
 
 * SASS Elements from Wed-Thur and How I Used Them:
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
+
 <table class="tg">
   <tr>
     <th class="tg-yw4l">SASS Element</th>

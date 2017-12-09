@@ -1,5 +1,6 @@
 footer {
   height: 11.5vh;
+  border: 1px dashed #ccc;
   background-color: $footer;
   @include flexy;
   & > * {

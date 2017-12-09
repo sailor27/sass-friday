@@ -3,7 +3,7 @@
 
 // mobile view styling: removes all but first album on each shelf.
 .shelf{
-  background-color: $container;
+  background-color: $footer;
   padding: 1.5vh 8vw;
   & > div:not(:first-child){
     display: none;
@@ -14,21 +14,27 @@
   background: url("../img/album1.jpg");
   @include fit-on-shelf(1,10%);
   @include square;
-  @include background;
 }
 // fit the albums on the shelves for tablet screen sizes. removes margin from last item in 4 album row.
 @media #{$charmeleon}{
+
   .shelf {
+//returns the rest of the albums that were hidden from the shelf for mobile
     & > div:not(:first-child){
       display: block;
     }
-    visibility: visible;
+
+    background-color: $container;
     overflow-x: scroll;
     max-height: 22vh;
+//adds picture using mixin that cycles through a for loop changing this image #
+    & > .album {
+      @include pic;
+    }
   }
   .album {
     @include background;
-    background: url("../img/album1.jpg");
+    // background: url("../img/album1.jpg");
     @include square;
     @include fit-on-shelf(4,2%);
       &:nth-child(4n){
@@ -40,7 +46,7 @@
 @media #{$charizard}{
   .shelf {
     max-height: 25vh;
-    background-color: green;
+    background-color: $container;
   }
   .album {
     @include fit-on-shelf(5,2%);

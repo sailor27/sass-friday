@@ -10,6 +10,9 @@ $container: #ccc;
 $navbar: #FFDB58;
 
 //💻breakpoints🖥
-$charmander: "only screen and (max-width: 767px)";
-$charmeleon: "only screen and (min-width: 599px)";
+$charmander: "only screen and (max-width: 599px)";
+$charmeleon: "only screen and (min-width: 600px)";
 $charizard: "only screen and (min-width: 991px)";
+
+// number of album art images to put in background of album divs
+$albums: 21;

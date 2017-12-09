@@ -38,11 +38,11 @@ header {
       list-style: none;
       display: inline-block; }
 
-@media only screen and (min-width: 599px) {
+@media only screen and (min-width: 600px) {
   .navbar ul {
     height: 4vh; } }
 .shelf {
-  background-color: #ccc;
+  background-color: #008F95;
   padding: 1.5vh 8vw; }
   .shelf > div:not(:first-child) {
     display: none; }
@@ -55,26 +55,45 @@ header {
   margin-right: 10%;
   margin-bottom: 10%;
   width: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  position: relative; }
   .album:before {
     content: "";
     display: block;
     padding-top: 100%; }
 
-@media only screen and (min-width: 599px) {
+@media only screen and (min-width: 600px) {
   .shelf {
-    visibility: visible;
+    background-color: #ccc;
     overflow-x: scroll;
     max-height: 22vh; }
     .shelf > div:not(:first-child) {
       display: block; }
+    .shelf > .album {
+      background: url("../img/album1.jpg");
+      background: url("../img/album2.jpg");
+      background: url("../img/album3.jpg");
+      background: url("../img/album4.jpg");
+      background: url("../img/album5.jpg");
+      background: url("../img/album6.jpg");
+      background: url("../img/album7.jpg");
+      background: url("../img/album8.jpg");
+      background: url("../img/album9.jpg");
+      background: url("../img/album10.jpg");
+      background: url("../img/album11.jpg");
+      background: url("../img/album12.jpg");
+      background: url("../img/album13.jpg");
+      background: url("../img/album14.jpg");
+      background: url("../img/album15.jpg");
+      background: url("../img/album16.jpg");
+      background: url("../img/album17.jpg");
+      background: url("../img/album18.jpg");
+      background: url("../img/album19.jpg");
+      background: url("../img/album20.jpg");
+      background: url("../img/album21.jpg"); }
 
   .album {
     background-repeat: no-repeat;
     background-size: contain;
-    background: url("../img/album1.jpg");
     position: relative;
     float: left;
     margin-right: 2%;
@@ -89,7 +108,7 @@ header {
 @media only screen and (min-width: 991px) {
   .shelf {
     max-height: 25vh;
-    background-color: green; }
+    background-color: #ccc; }
 
   .album {
     float: left;
@@ -113,7 +132,7 @@ header {
   height: 100%;
   float: left; }
 
-@media only screen and (min-width: 599px) {
+@media only screen and (min-width: 600px) {
   .news {
     padding: 1% 2%;
     height: 28vh;
@@ -132,6 +151,7 @@ header {
   height: 22vh; }
 footer {
   height: 11.5vh;
+  border: 1px dashed #ccc;
   background-color: #008F95;
   display: flex;
   justify-content: center;
@@ -141,9 +161,6 @@ footer {
 
 html * {
   box-sizing: border-box; }
-
-*:not(body):not(html) {
-  border: 1px dashed #ccc; }
 
 body {
   margin: 0;
