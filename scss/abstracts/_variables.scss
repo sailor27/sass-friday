@@ -1,12 +1,15 @@
 // 🎨colors
 // papaya
 $album: #E24E42;
+$papaya: #E24E42;
 //AQUA header and footer
 $header: #008F95;
+$aqua: #008F95;
 $footer: $header;
-//blush #de5d83
+$blush: #de5d83;
 $container: #ccc;
 //mustard
+$mustard: #FFDB58;
 $navbar: #FFDB58;
 
 //💻breakpoints🖥
@@ -16,3 +19,6 @@ $charizard: "only screen and (min-width: 991px)";
 
 // number of album art images to put in background of album divs
 $albums: 21;
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';

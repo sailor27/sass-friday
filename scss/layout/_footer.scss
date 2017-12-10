@@ -1,9 +1,12 @@
 footer {
   height: 11.5vh;
-  border: 1px dashed #ccc;
-  background-color: $footer;
+  background-color: $aqua;
   @include flexy;
+  li{
+    list-style: none;
+  }
   & > * {
     margin: 5%;
+    font-family: 'Open Sans', sans-serif;
   }
 }

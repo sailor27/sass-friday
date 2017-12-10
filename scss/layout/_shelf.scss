@@ -15,7 +15,6 @@ img{
 .album{
   position: relative;
   @include background;
-  background: url("../img/album1.jpg");
   @include fit-on-shelf(1,10%);
   @include square;
 }
@@ -32,9 +31,9 @@ img{
     overflow-x: scroll;
     height: 27vh;
 //adds picture using mixin that cycles through a for loop changing this image #
-    & > .album {
-      @include pic;
-    }
+    // & > .album {
+    //   @include pic;
+    // }
   }
   .album {
     @include background;
@@ -49,7 +48,7 @@ img{
 // fit the albums on the shelves for desktop screen sizes. adds margin on 4th album in row. removes margin from last item in 5 album row.
 @media #{$charizard}{
   .shelf {
-    max-height: 25vh;
+    max-height: 30vh;
     background-color: $container;
   }
   .album {

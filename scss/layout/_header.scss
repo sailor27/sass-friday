@@ -2,11 +2,17 @@ header {
   h1{
     @include flexy;
     text-align: center;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 3em;
+    color: $mustard;
+  }
+  li{
+    font-family: 'Open Sans', sans-serif;
   }
   background-color: $header;
     nav{
       ul {
-        background-color: $navbar;
+        background-color: $blush;
         margin:0;
         }
         li{
@@ -22,6 +28,20 @@ header {
 .sib{
   @include share3;
   @include flexy;
+  padding: 0;
+  li{
+    padding-right: 1vw;
+    text-align: center;
+    i{
+      font-size: 1.65em;
+      &:hover {
+        color:$blush;
+      }
+      &.fa-shopping-cart{
+        font-size: 1em;
+      }
+    }
+  }
 }
 .navbar{
   width: 100vw;
@@ -34,6 +54,12 @@ header {
 }
 
 @media #{$charmeleon}{
+  .sib{
+    li{
+      padding-right: 3vw;
+      font-size: 1.5em;
+    }
+  }
   .navbar{
     ul{
       height: 4vh;

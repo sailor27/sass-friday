@@ -48,10 +48,20 @@
     padding-top: 100%;
   }
 }
-// change background image based on index
+// change background image based on index -- doesn't work 😟
 
 @mixin pic{
   @for $i from 1 through $albums {
     background: url("../img/album#{$i}.jpg");
+  }
+}
+
+//alternate hover colors in an unordered list
+@mixin hover{
+  &:nth-child(even):hover{
+    color: $mustard;
+    &:nth-child(odd):hover{
+      color: $blush;
+    }
   }
 }
