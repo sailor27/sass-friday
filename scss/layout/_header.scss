@@ -3,7 +3,7 @@ header {
     @include flexy;
     text-align: center;
     font-family: 'Londrina Outline', cursive;
-    font-size: 3em;
+    font-size: 2.5em;
     color: $mustard;
   }
   li{
@@ -16,7 +16,7 @@ header {
         margin:0;
         }
         li{
-          padding: 0 5%;
+          // padding: 0 5%;
           }
       }
 }
@@ -30,7 +30,6 @@ header {
   @include flexy;
   padding: 0;
   li{
-    padding-right: 1vw;
     text-align: center;
     i{
       font-size: 1.65em;
@@ -47,17 +46,17 @@ header {
   width: 100vw;
   z-index: 1;
   ul{
+    height: 7vh;
     @include listy;
     @include flexy;
-    height: 10vh;
+
   }
 }
 
 @media #{$charmeleon}{
   .sib{
     li{
-      padding-right: 3vw;
-      font-size: 1.5em;
+      font-size: 1.25em;
     }
   }
   .navbar{

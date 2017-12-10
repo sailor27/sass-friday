@@ -2,19 +2,17 @@ header {
   background-color: #008F95; }
   header h1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     font-family: 'Londrina Outline', cursive;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #FFDB58; }
   header li {
     font-family: 'Open Sans', sans-serif; }
   header nav ul {
     background-color: #de5d83;
     margin: 0; }
-  header nav li {
-    padding: 0 5%; }
 
 .logo-header {
   display: flex;
@@ -28,11 +26,10 @@ header {
   width: 33.3333333333%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 0; }
   .sib li {
-    padding-right: 1vw;
     text-align: center; }
     .sib li i {
       font-size: 1.65em; }
@@ -45,18 +42,17 @@ header {
   width: 100vw;
   z-index: 1; }
   .navbar ul {
+    height: 7vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh; }
+    justify-content: space-around;
+    align-items: center; }
     .navbar ul li {
       list-style: none;
       display: inline-block; }
 
 @media only screen and (min-width: 600px) {
   .sib li {
-    padding-right: 3vw;
-    font-size: 1.5em; }
+    font-size: 1.25em; }
 
   .navbar ul {
     height: 4vh; } }
@@ -142,7 +138,7 @@ img {
     padding: 1% 2%;
     height: 28vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
 
   .card {
@@ -156,10 +152,7 @@ img {
   height: 22vh; }
 footer {
   height: 11.5vh;
-  background-color: #008F95;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-color: #008F95; }
   footer li {
     list-style: none; }
   footer > * {

@@ -15,7 +15,7 @@
 //turn into flex container and center items vertically and horizontally inside
 @mixin flexy{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 //align items center
