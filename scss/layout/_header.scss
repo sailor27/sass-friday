@@ -5,20 +5,15 @@ header {
     font-family: 'Londrina Outline', cursive;
     font-size: 2.5em;
     color: $mustard;
+    background-color: $header;
   }
   li{
     font-family: 'Open Sans', sans-serif;
   }
-  background-color: $header;
-    nav{
-      ul {
+  nav ul {
         background-color: $blush;
         margin:0;
         }
-        li{
-          // padding: 0 5%;
-          }
-      }
 }
 .logo-header{
   display: flex;

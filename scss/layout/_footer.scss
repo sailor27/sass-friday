@@ -1,7 +1,8 @@
 footer {
   height: 11.5vh;
   background-color: $aqua;
-  // @include flexy;
+  @include flexy;
+  clear:both;
   li{
     list-style: none;
   }
