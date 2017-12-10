@@ -1,8 +1,12 @@
-
 //share 3 ways - split the screen width 3 ways between sibling elements with "sib" class
 @mixin share3{
   margin:0;
   width: (100% / 3);
+  height: 100%;
+}
+@mixin share2{
+  margin:0;
+  width: (100% / 2);
   height: 100%;
 }
 // makes items in a list inline and unstyled
@@ -12,10 +16,15 @@
     display: inline-block;
   }
 }
-//turn into flex container and center items vertically and horizontally inside
+//turn into flex container and center items vertically and evenly across main axis inside
 @mixin flexy{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+@mixin flexy2{
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 //align items center
@@ -32,7 +41,6 @@
   margin-bottom:$margin;
   width: ((100% - (($albums - 1) * $margin)) / $albums);
 }
-
 //background image properties
 @mixin background{
   background-repeat: no-repeat;

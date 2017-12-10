@@ -11,3 +11,29 @@ footer {
     font-family: 'Open Sans', sans-serif;
   }
 }
+
+form{
+  label{
+    font-size: 1.15em;
+    color: #fff;
+    &:hover{
+      color:$mustard;
+    }
+  }
+  input{
+    background-color: $mustard;
+    height: 3vh;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  button{
+    height: 3vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    background-color: $blush;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    &:hover{
+      background-color: $papaya;
+    }
+  }
+}

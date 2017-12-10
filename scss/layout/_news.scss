@@ -1,21 +1,27 @@
 .news{
-  background-color: white;
   clear: both;
   height: 28vh;
   overflow-y:hidden;
 }
 .card {
   background-color: $album;
-  @include share3;
+  @include share2;
   float:left;
+  box-shadow: 0 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .card-text{
-  padding-top: 2vh;
-  @include flexy;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  padding-top: 0.5vh;
+  line-height: 2%;
+  text-align: center;
+  h4 a{
+    color: $mustard;
+  }
 }
 .thumbnail{
-  height: 60%;
-  margin: 4% 4% auto 4%;
+  height: 70%;
+  margin: 4% 12% auto 12%;
 }
 #img1{
   background: url("../img/studio.jpg");
@@ -29,16 +35,23 @@
   background: url("../img/all-dogs.jpg");
   @include background;
 }
+
 @media#{$charmeleon}{
   .news{
+    background-color: $blush;
     padding-top: 2%;
     padding-left: 2%;
     height: 28vh;
     @include flexy;
   }
   .card{
-    background-color: $mustard;
+    background-color: lighten(#ccc, 10%);
     @include fit-on-shelf(3,2%);
+  }
+  .card-text{
+    h4 a{
+      color: $papaya;
+    }
   }
 }
 @media #{$charizard}{
