@@ -9,9 +9,9 @@
 .shelf{
   background-color: $footer;
   padding: 1.5vh 8vw;
-  & > div:not(:first-child){
-    display: none;
-  }
+  overflow-x: scroll;
+  height: 27vh;
+
 }
 .album{
   position: relative;
@@ -23,11 +23,6 @@
 @media #{$charmeleon}{
 
   .shelf {
-//returns the rest of the albums that were hidden from the shelf for mobile
-    & > div:not(:first-child){
-      display: block;
-    }
-
     background-color: $container;
     overflow-x: scroll;
     height: 27vh;

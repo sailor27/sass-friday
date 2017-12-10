@@ -62,9 +62,9 @@ header nav ul {
 
 .shelf {
   background-color: #008F95;
-  padding: 1.5vh 8vw; }
-  .shelf > div:not(:first-child) {
-    display: none; }
+  padding: 1.5vh 8vw;
+  overflow-x: scroll;
+  height: 27vh; }
 
 .album {
   position: relative;
@@ -86,8 +86,6 @@ header nav ul {
     background-color: #ccc;
     overflow-x: scroll;
     height: 27vh; }
-    .shelf > div:not(:first-child) {
-      display: block; }
 
   .album {
     background-repeat: no-repeat;
