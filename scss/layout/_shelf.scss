@@ -9,7 +9,7 @@
 .shelf{
   background-color: $footer;
   padding: 1.5vh 8vw;
-  overflow-x: scroll;
+  overflow-x: hidden;
   height: 27vh;
 
 }
@@ -24,7 +24,6 @@
 
   .shelf {
     background-color: $container;
-    overflow-x: scroll;
     height: 27vh;
 //adds picture using mixin that cycles through a for loop changing this image #
     // & > .album {
