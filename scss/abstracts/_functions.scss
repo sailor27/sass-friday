@@ -1,1 +1,9 @@
+// for every album through 21 albums, creates an album class to apply a background image refering to the images in the img directory
 
+
+@for $i from 1 through $albums {
+  .album:nth-of-type(#{$i}){
+  background: url("../img/album#{$i}.jpg");
+  background-size: cover;
+  }
+}

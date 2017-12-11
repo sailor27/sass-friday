@@ -1,3 +1,91 @@
+.album:nth-of-type(1) {
+  background: url("../img/album1.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(2) {
+  background: url("../img/album2.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(3) {
+  background: url("../img/album3.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(4) {
+  background: url("../img/album4.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(5) {
+  background: url("../img/album5.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(6) {
+  background: url("../img/album6.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(7) {
+  background: url("../img/album7.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(8) {
+  background: url("../img/album8.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(9) {
+  background: url("../img/album9.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(10) {
+  background: url("../img/album10.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(11) {
+  background: url("../img/album11.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(12) {
+  background: url("../img/album12.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(13) {
+  background: url("../img/album13.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(14) {
+  background: url("../img/album14.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(15) {
+  background: url("../img/album15.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(16) {
+  background: url("../img/album16.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(17) {
+  background: url("../img/album17.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(18) {
+  background: url("../img/album18.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(19) {
+  background: url("../img/album19.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(20) {
+  background: url("../img/album20.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(21) {
+  background: url("../img/album21.jpg");
+  background-size: cover; }
+
+.album:nth-of-type(22) {
+  background: url("../img/album22.jpg");
+  background-size: cover; }
+
 header h1 {
   display: flex;
   justify-content: space-around;
@@ -45,6 +133,9 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center; }
+    .navbar ul a:hover {
+      color: #008F95;
+      font-size: 1.5em; }
     .navbar ul li {
       list-style: none;
       display: inline-block; }
@@ -55,11 +146,6 @@ header nav ul {
 
   .navbar ul {
     height: 4vh; } }
-.shelf img {
-  position: absolute;
-  top: 0px;
-  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-
 .shelf {
   background-color: #008F95;
   padding: 1.5vh 8vw;
@@ -67,10 +153,7 @@ header nav ul {
   height: 27vh; }
 
 .album {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   float: left;
   margin-right: 10%;
   margin-bottom: 10%;
@@ -87,9 +170,6 @@ header nav ul {
     height: 27vh; }
 
   .album {
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
     position: relative;
     float: left;
     margin-right: 3%;

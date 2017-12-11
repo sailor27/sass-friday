@@ -58,11 +58,13 @@
 }
 // change background image based on index -- doesn't work 😟
 
-@mixin pic{
-  @for $i from 1 through $albums {
-    background: url("../img/album#{$i}.jpg");
-  }
-}
+// @mixin pic{
+//   @for $i from 1 through $albums {
+//     // .album:nth-of-type(#{$i}){
+//     background: url("../img/album#{$i}.jpg");
+//     // }
+//   }
+// }
 
 //alternate hover colors in an unordered list
 @mixin hover{

@@ -1,38 +1,24 @@
 // Styles for Album Shelves
 
-.shelf img{
-  position: absolute;
-  top:0px;
-  box-shadow: 0 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
 // mobile view styling: removes all but first album on each shelf.
 .shelf{
   background-color: $footer;
   padding: 1.5vh 8vw;
   overflow-x: hidden;
   height: 27vh;
-
 }
 .album{
-  position: relative;
-  @include background;
+  box-shadow: 0 5px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   @include fit-on-shelf(1,10%);
   @include square;
 }
 // fit the albums on the shelves for tablet screen sizes. removes margin from last item in 4 album row.
 @media #{$charmeleon}{
-
   .shelf {
     background-color: $container;
     height: 27vh;
-//adds picture using mixin that cycles through a for loop changing this image #
-    // & > .album {
-    //   @include pic;
-    // }
   }
   .album {
-    @include background;
-    // background: url("../img/album1.jpg");
     @include square;
     @include fit-on-shelf(3,3%);
       &:nth-child(3n){
